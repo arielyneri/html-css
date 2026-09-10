@@ -3,88 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Tabela</title>
+    <title>Exercicio de Tabela</title>
     <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
         table {
-            width: 700px;
+            width: 500px;
             border-collapse: collapse;
-            text-align: center;
         }
-        tr, th, td {
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th, td {
             border: 1px solid black;
+            padding: 8px;
         }
-        thead>tr:nth-child(1){
+        col.cnome {
+            background-color: aquamarine;
+        }
+        col.csexo {
+            background-color: blue;
+        }
+        col.cidade {
             background-color: gray;
         }
-        thead > tr:nth-child(2) > th { background-color: gray;
-        }
-        tbody>tr>th:nth-child(1){
-            background-color: gray;
+        col.cprof {
+            background-color: blueviolet;
         }
     </style>
 </head>
 <body>
+    <h1>Exercicio de Tabela</h1>
     <table>
-        <thead>
-            <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
-            </tr>
-            <tr>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th rowspan="4">Exatas</th>
-                <td>Matemática</td>
-                <td>00</td>
-                <td>00</td>
-                <td>00</td>
-            </tr>
-            <tr>
-                <td>Física</td>
-                <td>00</td>
-                <td>00</td>
-                <td>00</td>
-            </tr>
-            <tr>
-                <td>Química</td>
-                <td>00</td>
-                <td>00</td>
-                <td>00</td>
-            </tr>
-            <tr>
-                <td>Biologia</td>
-                <td>00</td>
-                <td>00</td>
-                <td>00</td>
-            </tr>
-            <tr>
-                <th colspan="4">Média de Exatas</th>
-                <td>00</td>
-            </tr>
-            <tr>
-                <th rowspan="2">Humanas</th>
-                <td>História</td>
-                <td>00</td>
-                <td>00</td>
-                <td>00</td>
-            </tr>
-            <tr>
-                <td>Geografia</td>
-                <td>00</td>
-                <td>00</td>
-                <td>00</td>
-            </tr>
-            <tr>
-                <th colspan="4">Média de Humanas</th>
-                <td>00</td>
-            </tr>
-        </tbody>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Claudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Otávio</td>]
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+        </tr>
     </table>
 </body>
 </html>
