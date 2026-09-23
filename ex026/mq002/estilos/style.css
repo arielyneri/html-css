@@ -1,6 +1,6 @@
-@charset "UTP-8";
+@charset "UTF-8";
 
-/* Configirações gerais */
+/* Configurações gerais */
 
 * {
     margin: 0px;
@@ -8,14 +8,17 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body {
+html,
+body {
     width: 100vw;
     height: 100vh;
     background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 h1 {
     color: white;
-    text-shadow: 3px 3px 0px #021077;
+    text-shadow: 2px 2px 0px #021077;
     padding: 10px;
 }
